@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tribe</string>
+    <string name="title_activity_blog">Blog</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="new_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="news_content_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Ac felis donec et odio pellentesque diam volutpat commodo. Dolor morbi non arcu risus quis varius quam quisque id. Morbi quis commodo odio aenean sed. Ipsum consequat nisl vel pretium lectus quam id leo in. Pretium quam vulputate dignissim suspendisse in est ante. Proin nibh nisl condimentum id.</string>
+    <string name="comment">Varius vel pharetra vel turpis nunc eget, Varius vel pharetra vel turpis nunc eget Varius vel pharetra vel turpis nunc eget.</string>
+</resources>

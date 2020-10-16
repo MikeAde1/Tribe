@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.blog.NewsPage"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="2dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/appbar_padding"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:text="Blog"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+        </FrameLayout>
+
+        <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/frame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:text="Finance and Tax"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_line_45"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:text="03 Sept, 2020"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How do we determine our interest rates?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout1"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_src"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_topic"/>
+
+        <TextView
+            android:id="@+id/news_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/news_content_2"
+            android:lineSpacingExtra="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/img_src"/>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/news_data"
+            android:background="@drawable/ic_line_45"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#C4C4C4"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/line1"
+            app:layout_constraintEnd_toStartOf="@id/view2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view1"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
+
+        <!--<ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line_45"
+            app:layout_constraintTop_toBottomOf="@+id/news_data"
+            app:layout_constraintStart_toStartOf="@id/news_data"
+            app:layout_constraintEnd_toEndOf="@id/news_data"/>-->
+
+        <ImageView
+            android:id="@+id/writer_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/view1"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="@id/view1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_woman_1" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/writer_img"
+            app:layout_constraintTop_toTopOf="@id/writer_img"
+            app:layout_constraintBottom_toBottomOf="@id/writer_img"
+            android:layout_marginLeft="10dp"
+            android:text="Tania Tahauf"/>
+        <ImageView
+            android:id="@+id/linkin_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/whatsapp_img"
+            app:layout_constraintTop_toTopOf="@id/writer_img"
+            app:layout_constraintBottom_toBottomOf="@id/writer_img"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_vector__6_"/>
+        <ImageView
+            android:id="@+id/whatsapp_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/msg_img"
+            app:layout_constraintTop_toTopOf="@id/writer_img"
+            app:layout_constraintBottom_toBottomOf="@id/writer_img"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_vector__1_"/>
+        <ImageView
+            android:id="@+id/msg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/writer_img"
+            app:layout_constraintBottom_toBottomOf="@id/writer_img"
+            app:layout_constraintEnd_toStartOf="@+id/twitter_img"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_vector__2_"/>
+        <ImageView
+            android:id="@+id/twitter_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/writer_img"
+            app:layout_constraintBottom_toBottomOf="@id/writer_img"
+            app:layout_constraintEnd_toStartOf="@id/fb_img"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_vector__4_"/>
+        <ImageView
+            android:id="@+id/fb_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/writer_img"
+            app:layout_constraintBottom_toBottomOf="@id/writer_img"
+            app:layout_constraintEnd_toEndOf="@id/view2"
+            android:src="@drawable/ic_vector__5_"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/reader_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_woman_1"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/writer_img"/>
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:hint="Share your thoughts"
+            android:gravity="top"
+            android:textSize="13sp"
+            android:padding="5dp"
+            app:layout_constraintTop_toTopOf="@id/reader_img"
+            app:layout_constraintStart_toEndOf="@id/reader_img"
+            android:background="@drawable/comment_bg"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/et_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/colorPrimary"
+            android:textAllCaps="false"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/submit_btn"/>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/recyclerview"
+            android:background="@drawable/ic_line_45"
+            android:layout_margin="20dp"
+            android:backgroundTint="#C4C4C4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:text="More amazing articles for you"/>
+
+            <ImageView
+                android:id="@+id/news_img"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/image5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/tv_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:background="#F9FAFC"
+                android:paddingEnd="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:textSize="11sp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black"
+                    android:text="Finance and Tax"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/ic_line_45"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textSize="11sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="0dp"
+                    android:textColor="@color/black"
+                    android:text="03 Sept,2020"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textSize="11sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:text="3 mins read"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFC"
+                android:paddingVertical="20dp"
+                app:layout_constraintStart_toStartOf="@id/news_img"
+                app:layout_constraintEnd_toEndOf="@id/news_img"
+                app:layout_constraintTop_toBottomOf="@id/news_data"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="How do we determine our interest rates?"/>
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="5"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/new_content"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read More"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    app:strokeColor="@color/colorPrimary"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
