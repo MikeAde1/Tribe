@@ -8,10 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.input.input
 import com.example.tribe.R
+import com.example.tribe.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_news_page.*
 
 
-class NewsPage : AppCompatActivity() {
+class NewsPage : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_page)

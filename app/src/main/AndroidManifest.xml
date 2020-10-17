@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tribe">
+        <activity android:name=".ui.LogoutPage"></activity>
         <activity
             android:name=".ui.blog.NewsPage"
-            android:theme="@style/Theme.Tribe.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Tribe.NoActionBar"></activity>
         <activity
             android:name=".ui.insights.BlogCover"
             android:label="@string/title_activity_blog"
@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.BaseActivity"/>
     </application>
 
 </manifest>

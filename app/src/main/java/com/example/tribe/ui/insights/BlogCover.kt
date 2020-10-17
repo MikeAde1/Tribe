@@ -6,11 +6,12 @@ import android.view.ViewGroup.MarginLayoutParams
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.example.tribe.databinding.ActivityBlogBinding
+import com.example.tribe.ui.BaseActivity
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_blog.*
 
 
-class BlogCover : AppCompatActivity() {
+class BlogCover : BaseActivity() {
 
     private lateinit var binding: ActivityBlogBinding
 
